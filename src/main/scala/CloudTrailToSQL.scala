@@ -35,7 +35,7 @@ import scala.collection.JavaConversions._
   * Quick Start: To use this code, do the following:
   * 1. Provision an EMR cluster with Spark 1.4.1 and an IAM role that has CloudTrail and S3 describe and read permissions.
   * 2. SSH to that cluster and run that spark-shell, e.g.:
-      spark-shell --master yarn-client --num-executors 40 --conf spark.executor.cores=2
+      spark-shell --master yarn-client --num-executors 40 --executor-cores 2
   * 3. Cut and paste all of this code into your Spark Shell (once the scala> prompt is available)
   * 4. Run the following commands:
       var cloudtrail = CloudTrailToSQL.createTable(sc, sqlContext) //creates and registers the Spark SQL table
